@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media-768.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Test</h1>
+        <!-- Main app -->
+        <div>
+            <div class="section">
+                <div class="input-output-group">
+                    <h2>Name/Value Pair</h2>
+                    <input type="text" class="input-output" id="input" placeholder="Name=Value">
+                </div>
+                <div class="buttons">
+                    <button data-action="add" class="action-button">Add</button>
+                </div>
+            </div>
+            <div class="section section-output">
+                <div class="input-output-group">
+                    <h2>Name/Value Pair List</h2>
+                    <div class="input-output" id="output-container">
+                        <ul id="output"></ul>
+                    </div>
+                </div>
+                <div class="buttons show-options">
+                    <div class="sort-buttons">
+                        <button data-action="sort" data-argument="name" class="action-button">Sort by Name</button>
+                        <button data-action="sort" data-argument="value" class="action-button">Sort by Value</button>
+                    </div>
+                    <button data-action="delete" class="action-button">Delete</button>
+                    <button data-action="showXml" class="action-button">Show XML</button>
+                </div>
+            </div>
+        </div>
+        <!-- XML Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-main">
+                <span class="close" id="modal-close">&times;</span>
+                <div class="content" id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Script -->
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
+

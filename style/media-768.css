@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+    /* Containers */
+    .container {
+        width: 90%;
+    }
+    .section {
+        flex-direction: column;
+    }
+
+    .input-output-group {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .section-output {
+        flex-direction: column-reverse;
+    }
+
+    /* Input and Output */
+    #output-container {
+        height: 180px;
+    }
+
+    /* Buttons */
+    .buttons.show-options {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .buttons button {
+        width: fit-content;
+    }
+
+    .sort-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sort-buttons button {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    .sort-buttons button:last-of-type {
+        margin-right: 0;
+    }
+
+    /* Modal */
+    .modal-main {
+        width: 90%;
+        height: 70vh;
+        padding: 15px 10px;
+    }
+
+    .modal .close {
+        font-size: 25px;
+    }
+
+
+}
